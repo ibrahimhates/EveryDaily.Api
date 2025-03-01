@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EveryDaily.Persistence/1.0.0": {
+        "dependencies": {
+          "EveryDaily.Core": "1.0.0",
+          "EveryDaily.Domain": "1.0.0"
+        },
+        "runtime": {
+          "EveryDaily.Persistence.dll": {}
+        }
+      },
+      "EveryDaily.Core/1.0.0": {
+        "runtime": {
+          "EveryDaily.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "EveryDaily.Domain/1.0.0": {
+        "dependencies": {
+          "EveryDaily.Core": "1.0.0"
+        },
+        "runtime": {
+          "EveryDaily.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EveryDaily.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EveryDaily.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EveryDaily.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

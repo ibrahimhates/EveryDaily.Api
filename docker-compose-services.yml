@@ -1,0 +1,19 @@
+﻿version: '3.8'
+
+services:
+  everydaily.api:
+    image: everydaily.api
+    build:
+      context: .
+      dockerfile: EveryDaily.Api/Dockerfile
+    ports:
+        - "5000:80"
+    envoriment: 
+        - ASPNETCORE_ENVIRONMENT=Docker
+    networks:
+      - everydaily
+    hostname: everydaily.api
+    
+networks:
+  everydaily:
+    external: true

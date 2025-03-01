@@ -1,0 +1,15 @@
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\bin\Debug\net8.0\EveryDaily.Domain.deps.json
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\bin\Debug\net8.0\EveryDaily.Domain.dll
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\bin\Debug\net8.0\EveryDaily.Domain.pdb
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\bin\Debug\net8.0\EveryDaily.Core.dll
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\bin\Debug\net8.0\EveryDaily.Core.pdb
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\obj\Debug\net8.0\EveryDaily.Domain.csproj.AssemblyReference.cache
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\obj\Debug\net8.0\EveryDaily.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\obj\Debug\net8.0\EveryDaily.Domain.AssemblyInfoInputs.cache
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\obj\Debug\net8.0\EveryDaily.Domain.AssemblyInfo.cs
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\obj\Debug\net8.0\EveryDaily.Domain.csproj.CoreCompileInputs.cache
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\obj\Debug\net8.0\EveryDai.3BFBDBE7.Up2Date
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\obj\Debug\net8.0\EveryDaily.Domain.dll
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\obj\Debug\net8.0\refint\EveryDaily.Domain.dll
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\obj\Debug\net8.0\EveryDaily.Domain.pdb
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Domain\obj\Debug\net8.0\ref\EveryDaily.Domain.dll

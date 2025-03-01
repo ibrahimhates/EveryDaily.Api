@@ -1,0 +1,11 @@
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Core\bin\Debug\net8.0\EveryDaily.Core.deps.json
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Core\bin\Debug\net8.0\EveryDaily.Core.dll
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Core\bin\Debug\net8.0\EveryDaily.Core.pdb
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Core\obj\Debug\net8.0\EveryDaily.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Core\obj\Debug\net8.0\EveryDaily.Core.AssemblyInfoInputs.cache
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Core\obj\Debug\net8.0\EveryDaily.Core.AssemblyInfo.cs
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Core\obj\Debug\net8.0\EveryDaily.Core.csproj.CoreCompileInputs.cache
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Core\obj\Debug\net8.0\EveryDaily.Core.dll
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Core\obj\Debug\net8.0\refint\EveryDaily.Core.dll
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Core\obj\Debug\net8.0\EveryDaily.Core.pdb
+C:\Users\atesi\Desktop\Yazilim Muhendisligi Proje\EveryDaily.Api\EveryDaily.Core\obj\Debug\net8.0\ref\EveryDaily.Core.dll
