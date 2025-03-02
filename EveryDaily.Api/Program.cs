@@ -1,9 +1,15 @@
+using EveryDaily.Application.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Common
+builder.Services.ConfigureRedis(builder.Configuration);
 
 var app = builder.Build();
 
@@ -14,13 +20,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
-app.MapGet("/helloworld", () =>
-    {
-        return "Hello World!";
-    })
-    .WithName("GetWeatherForecast")
-    .WithOpenApi();
+app.MapControllers();
 
 app.Run();
