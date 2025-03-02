@@ -6,17 +6,17 @@ networks:
   
 services:
   everydaily-db:
-    image: postgres:latest
-      container_name: everydaily-db
-      hostname: everydaily-db
-      ports:
-        - "5432:5432"
-      environment:
-        POSTGRES_USER: admin
-        POSTGRES_PASSWORD: P@ssw0rd
-      networks:
-        - everydaily
-      restart: always
+    image: postgres
+    container_name: everydaily-db
+    hostname: everydaily-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: P@ssw0rd
+    networks:
+      - everydaily
+    restart: always
 
   # dek-elasticsearch:
   #   image: docker.elastic.co/elasticsearch/elasticsearch:8.11.1
