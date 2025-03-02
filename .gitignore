@@ -23,8 +23,8 @@ ehthumbs.db
 [Dd]ebug_ARM64/
 
 # .NET Core build directories
-bin/
-obj/
+*/bin/
+*/obj/
 
 # User-specific files
 .vs/
