@@ -7,13 +7,9 @@
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     </PropertyGroup>
 
-    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-      <DocumentationFile>bin\Debug\EveryDaily.Api.xml</DocumentationFile>
-    </PropertyGroup>
-
     <PropertyGroup>
+      <DocumentationFile>bin\Debug\EveryDaily.Api.xml</DocumentationFile>
       <GenerateDocumentationFile>true</GenerateDocumentationFile>
-      <NoWarn>1591</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
