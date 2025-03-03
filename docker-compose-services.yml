@@ -1,6 +1,6 @@
 ﻿services:
-  everydaily.api:
-    image: everydaily.api
+  dailyngo.api:
+    image: dailyngo.api
     build:
       context: .
       dockerfile: EveryDaily.Api/Dockerfile
@@ -9,10 +9,10 @@
     environment: 
         - ASPNETCORE_ENVIRONMENT=Docker
     networks:
-      - everydaily
-    hostname: everydaily.api
+      - dailyngo
+    hostname: dailyngo.api
     restart: always
     
 networks:
-  everydaily:
+  dailyngo:
     external: true

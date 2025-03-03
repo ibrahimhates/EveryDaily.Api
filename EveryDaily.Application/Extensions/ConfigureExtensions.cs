@@ -1,6 +1,8 @@
 using EveryDaily.Application.Settings;
 using EveryDaily.Core;
+using EveryDaily.Persistence;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -9,6 +11,11 @@ namespace EveryDaily.Application.Extensions;
 
 public static class ConfigureExtensions
 {
+   /// <summary>
+   /// Redis baglantisinin yapilandirilmasi
+   /// </summary>
+   /// <param name="services"></param>
+   /// <param name="configuration"></param>
    public static void ConfigureRedis(this IServiceCollection services, IConfiguration configuration)
    {
       services.AddMemoryCache();
@@ -22,5 +29,35 @@ public static class ConfigureExtensions
          var result = redis.Connect();
          return redis;
       });
+   }
+   
+   /// <summary>
+   /// Cors politikalarinin yapilandirilmasi
+   /// </summary>
+   /// <param name="services"></param>
+   public static void ConfigureCors(this IServiceCollection services,string corsName)
+   {
+      services.AddCors(options =>
+      {
+         options.AddPolicy(corsName, builder =>
+         {
+            builder.WithOrigins("http://localhost:3000", "https://ui.dailyngo.com", "http://ui.dailyngo.com")
+               .AllowAnyHeader()
+               .AllowAnyMethod()
+               .AllowCredentials();
+         });
+      });
+   }
+
+   /// <summary>
+   /// Database baglantisinin yapilandirilmasi
+   /// </summary>
+   /// <param name="services"></param>
+   /// <param name="configuration"></param>
+   public static void ConfigureNpgsql(this IServiceCollection services, IConfiguration configuration)
+   {
+      services.AddDbContext<AppDbContext>(options =>
+         options.UseNpgsql(configuration.GetConnectionString("NpgsqlConnection"),
+            b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName)));
    }
 }
