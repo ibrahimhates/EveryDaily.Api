@@ -1,11 +1,13 @@
-using EveryDaily.Application.Settings;
+using EveryDaily.Application.Repositories;
 using EveryDaily.Core;
+using EveryDaily.Core.Settings;
 using EveryDaily.Persistence;
-using Microsoft.AspNetCore.Builder;
+using EveryDaily.Persistence.BaseRepositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using MongoDB.Bson;
 
 namespace EveryDaily.Application.Extensions;
 
@@ -59,5 +61,12 @@ public static class ConfigureExtensions
       services.AddDbContext<AppDbContext>(options =>
          options.UseNpgsql(configuration.GetConnectionString("NpgsqlConnection"),
             b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName)));
+   }
+   
+   public static void ConfigureMongoDbRepositories(this IServiceCollection services, IConfiguration configuration)
+   {
+      services.Configure<MongoDbSettings>(configuration.GetSection("MongoDBConnection"));
+      // asagidaki ornekteki gibi repositoryler eklenebilir.
+      services.AddScoped<MongoDbRepository<TestModel,ObjectId>,TestRepository>();
    }
 }

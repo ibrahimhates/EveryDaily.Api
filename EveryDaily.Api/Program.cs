@@ -4,7 +4,7 @@ using EveryDaily.Application.Assembly;
 using EveryDaily.Application.Extensions;
 using EveryDaily.Application.Services.Cache;
 using EveryDaily.Application.Services.Jwt;
-using EveryDaily.Application.Settings;
+using EveryDaily.Core.Settings;
 using EveryDaily.Domain.Entities;
 using EveryDaily.Persistence;
 using MediatR;
@@ -85,6 +85,7 @@ var dailyngoCors = "DailyngoCors";
 builder.Services.ConfigureRedis(builder.Configuration);
 builder.Services.ConfigureNpgsql(builder.Configuration);
 builder.Services.ConfigureCors(dailyngoCors);
+builder.Services.ConfigureMongoDbRepositories(builder.Configuration);
 
 #region JWT
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();

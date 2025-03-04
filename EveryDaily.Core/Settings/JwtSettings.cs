@@ -1,4 +1,4 @@
-namespace EveryDaily.Application.Settings;
+namespace EveryDaily.Core.Settings;
 
 public class JwtSettings
 {
